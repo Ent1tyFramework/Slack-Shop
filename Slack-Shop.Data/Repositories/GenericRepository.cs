@@ -4,13 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Linq.Expressions;
+using Slack_Shop.Domain.Interfaces;
 
-namespace Slack_Shop.Data
+namespace Slack_Shop.Data.Entities
 {
     public class GenericRepository<TEntity>
-        : IGenericRepository<TEntity> where TEntity : class
+        : IGenericRepository<TEntity> where TEntity : class, IEntity
     {
-        private Contexts.DbContext dbContext;
+        private Slack_Shop.Data.Contexts.DbContext dbContext;
 
         public GenericRepository(Contexts.DbContext dbContext)
         {
@@ -30,6 +31,15 @@ namespace Slack_Shop.Data
             using (dbContext = dbContext.GetContext())
             {
                 return await dbContext.Set<TEntity>().FirstOrDefaultAsync(expression);
+            }
+        }
+
+        public async Task AddAsync(TEntity entity)
+        {
+            using (dbContext = dbContext.GetContext())
+            {
+                dbContext.Set<TEntity>().Add(entity);
+                await dbContext.SaveChangesAsync();
             }
         }
     }

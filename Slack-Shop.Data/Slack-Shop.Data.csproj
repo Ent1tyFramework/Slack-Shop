@@ -48,9 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\DbContext.cs" />
-    <Compile Include="Contexts\ProductDbContext.cs" />
-    <Compile Include="Entities\Product.cs" />
-    <Compile Include="Enums\ProductType.cs" />
+    <Compile Include="Contexts\ShopDbContext.cs" />
     <Compile Include="Interfaces\IGenericRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IRepositoryManager.cs" />
@@ -61,6 +59,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Slack-Shop.Domain\Slack-Shop.Domain.csproj">
+      <Project>{5452d839-d78f-4cb8-9621-a0851444e364}</Project>
+      <Name>Slack-Shop.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

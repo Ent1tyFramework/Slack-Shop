@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slack-Shop", "Slack-Shop\Sl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slack-Shop.Data", "Slack-Shop.Data\Slack-Shop.Data.csproj", "{085FCB72-7042-4183-A4BE-BF6EBE2E6C48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slack-Shop.Services", "Slack-Shop.Services\Slack-Shop.Services.csproj", "{4C886BF6-387C-4956-8861-28D16ECBDF1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slack-Shop.Domain", "Slack-Shop.Domain\Slack-Shop.Domain.csproj", "{5452D839-D78F-4CB8-9621-A0851444E364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slack-Shop.Identity", "Slack-Shop.Identity\Slack-Shop.Identity.csproj", "{28600DC8-7346-4F62-B60A-92E8062878A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{085FCB72-7042-4183-A4BE-BF6EBE2E6C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{085FCB72-7042-4183-A4BE-BF6EBE2E6C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{085FCB72-7042-4183-A4BE-BF6EBE2E6C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C886BF6-387C-4956-8861-28D16ECBDF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C886BF6-387C-4956-8861-28D16ECBDF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C886BF6-387C-4956-8861-28D16ECBDF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C886BF6-387C-4956-8861-28D16ECBDF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5452D839-D78F-4CB8-9621-A0851444E364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5452D839-D78F-4CB8-9621-A0851444E364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5452D839-D78F-4CB8-9621-A0851444E364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5452D839-D78F-4CB8-9621-A0851444E364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28600DC8-7346-4F62-B60A-92E8062878A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28600DC8-7346-4F62-B60A-92E8062878A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28600DC8-7346-4F62-B60A-92E8062878A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28600DC8-7346-4F62-B60A-92E8062878A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

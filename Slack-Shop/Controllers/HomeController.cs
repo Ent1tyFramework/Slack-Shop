@@ -1,16 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Slack_Shop.Domain.Entities;
+using Slack_Shop.Domain.Enums;
+using Slack_Shop.Services.Interfaces;
+using System.Threading.Tasks;
 using System.Web.Mvc;
+using System;
 
 namespace Slack_Shop.Controllers
 {
-    internal class HomeController : Controller
+    [Authorize]
+    public class HomeController : Controller
     {
-        public ActionResult Main()
+
+        public HomeController()
         {
-            return View();
+        }
+
+        public async Task<ActionResult> Main()
+        {
+
+            return View("Main");
         }
     }
 }

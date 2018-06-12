@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Slack_Shop.Data.Enums
+namespace Slack_Shop.Domain.Enums
 {
-    internal enum ProductType
+    public enum ProductType
     {
         Accessory
     }

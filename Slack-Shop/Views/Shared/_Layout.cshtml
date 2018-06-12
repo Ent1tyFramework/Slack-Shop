@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CEEBOX#SHOP @ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/Content/Styles/reset.css" />
+    <link rel="stylesheet" href="~/Content/Styles/Layout/layout.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_top_bar">
+                <div class="search left">
+                    <form action="">
+                        <input type="submit" value="">
+                        <input type="search" placeholder="Search">
+                    </form>
+                </div>
+                <div class="cart right">
+                    <div class="clearfix">
+                        <div class="left_cart left">
+                            <img src="/Content/Images/shopping-cart.png" alt="">
+                            <span>Cart(0)</span>
+                        </div>
+                        <div class="check_out right">
+                            <span>Check out</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <a href="#">
+                    <img src="/Content/Images/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="body">
+        <div class="container clearfix">
+            <section id="menu" class="left">
+                <nav>
+                    <ul>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE5SURBVEhL7dW9SgNREIbhRSutFIylaBQ7i2Bj5yV4A2KtNyCpBDsLBRtBLcRGEDtBELS1sBPEWvxpvQPx553ljJzMTg67pxAEP3jI7maYLyQbtvgrGcAUhsuzzMzgDocYlAtR9vGFx/IsI7L8FbJEnCIuuYC+1zjT0OV7eAjHcUl2Qbx8G/Jdj8OWZBXI8hfocvkBr7AGW3IZjmsXtGGXX4fzT9iSj/BaqyC1XHklKhm5l58hg/2Wq34l9hb+SZPlyis5RqVElj9BBuouV1rSglsyidzlKllyEi7kLldeyRKKDpaRWn6Lrcgu3mDntGQM6xhBmSGkPvksbDbhzUrJKnoyB29YTcCmC29W3KMn/wXW7xeMwhtUG5iPLOAG3qw4RyUH8IabesciKpGn1QqOcJZpB/LHDSmKb/zkHoEEM2m0AAAAAElFTkSuQmCC">
+                            <span>Home</span>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFbSURBVEhL7dQ7LwRRHIfhcQlxFzUKrUaFCoWolMQHUBMJQlQK1Ar3UqVSSEgkWyhoiAKFSBQ0KolISBRu7+/MnMkxjt0dSvsmT2bO7H8m2ZmdDQr9pWYsYQE1OpCoBWuYR60OpKka11jENnZRAls99PkG9rCPIuTdMrbCXXPhDLrNKmwcq+FuUIFLDJtVHvXiDg1mFVYcbd3Koq1qxwN0W7NWh1v0m1W65pDzVg1hItxNnb6RnkmnWXnSgxvAGKZ+aQR9cG+fqQe6hx8/OIN7oRncwzcrV2hE3DF8g9Y7OmCbhG/OtY64V/iGXEfQSaJ3wDfjOoVJv2PfQNIsBiOb0bFsLhD3At+QdYNy2JrwDN+sdYi4HfiGRPff915Mwzdv6fO4VjwhOaSLj8KXXqgVJM+Rc1ThS204wBs0dIIu5Ervji6ocx6hl839m/mWHnpluJuq0mhb6H8VBJ9hZJ3B5iSD6wAAAABJRU5ErkJggg==">
+                            <span>Accessories</span>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFLSURBVEhLxdW/K8VRHMbx7yApUddgsFhksriFRVkogzJQyi2LhUX5B5TBn8DEbpFFBoOSIjHIYBGlKBmkZCC/3k99T51Onxufs3jqVd+eus+993vvPbf4JS2o/EEjsnKD78Sb0S3CnSZ8Ih66xVLSyTrc6YEe/IFrfEGv/h7qn/BYXh/BnTFodB5T0NAFBsvrK7TjGHdwpxu9mMQrNPqC0/JaDtCJCbgzjHOEsXr05DtwR7fGGqzHnRlYQxa9C3emYY1ZnuGOPjhrzPIAd0ZhjVn0i3enH9aY5QzudMEaC7+J2B7caUM6JNtGt4mspIfdO2aTTlaRlXCYBZcYSDpZRlbSo2ILrUknc8jKLuKhFSjhyA7GkZUNxEM1KPuI+z5kRfc2HqpCWUPcdyArurdhRN+oZigLiPsGZGUE+ruUQxVlhhD6ExX/lKL4ARzV0fxpYhqQAAAAAElFTkSuQmCC">
+                            <span>Denim</span>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVEhL5dVLKKxhHMfxccutWCmJpOwcYuWSy8ZCEjbSKXUKhxWyoChb2dhRFmTDRqzYKLJkpSTRcT0n1MlGNizcvr93PJkezxgzZiO/+jTPM/O+//ed97m8vq+UWHSiDwn6IprJxjqeXswhamnDDUxxox4RJQaZqMEw9Ejs4g+YR9AkoRrNSEU7EjGDPJy8fF5gAPYFVrANZ1KwD3NwCxZQh1WU4hizCCxq3OIntuBMAQJP0IEb2MMl7hD4u60bvZiEM5pu43ANXChT0Pl/UIJ30w9XEZvGoQfFUNRe9jeDJx0HcBW0DcFEd/0PWV7PkVx04aPFr5EDRWOn4rVez8pvnMJVJJhzlEOpgIprpr1JHELNDJumawb0KMZwBK2boDmDq5DtHiP4gSXoX4wiDe+mEY9wFZUrTKMQDfiPXwhr19Tctwvroh2Ih6JVrGdd5PXCTDIOEXiBCZhok9tFldeLME0wd74I7Usm2l/W/M3Io2Wugav0eq/R1vwX+V7vk2nFDsqgfX8QWiNmzkcleg9sQpuW3gGa898yPt8zbSy5dXF9ui0AAAAASUVORK5CYII=">
+                            <span>Footwear</span>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVEhL7dQ/KIVRGMfxV8hguJNkJEZ3UXdUBgZKIpa7GGQ1GNitDBYLk1FiZJWFFLIZpQzkT/6U/P8+b++p5xxP7r3nKotffZbfPe95em/nPUmJTGENhzjHA+5xih0sIofobOITG2iVgtSjGxeQ39oQnTHIJmJVClKDM0j3BhlYcRowiHW4AdeoRUF1L5hDHmVnGLdwm2hdmA065wAd+DFDkNe2NhDT2A467RLtMNOMJ1gPOlt4DLrQHszMw3pAezc6ywC8yEm4grU4hhxvL32wFsZ6hvcBLsNaWI1xpKnDb/49jpy2NL2wFlTrFU1IFrJCuzG6UuQiDLsi0ptSl/vYDbpyyF11F3Qr+Ha2JxAzYCmjuyN4hZCPJHZAeE+dwCvE/wDd/d2AHkxWqBPmgA9ViH7EZgZ6r2OkV8VoZgSNiE0L3F5ICl++XIvNlft68gAAAABJRU5ErkJggg==">
+                            <span>Outerwear</span>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEuSURBVEhLrdUhSwRRFMXxiQYxmDQIKga7Qb/BYrIa1LJBRCwWZcOCbNBkMAoiWBRsYtlvYPAj2LQYtCioGPR/YQ48LiO859wDv/DuW+awM8yb6o9c4qfQHrJzhddCfWRnArO18ZrWMgr/u+zcQn99B2fJWrZxnqwPkR0VfGIaD/U6dY3lZF1cYPd1FZtILyzfWMQBvlBUMA+7vz3YhZoKzAvWMIkZZOcE72i6aBMr2kJ20oecem6Yyb8esneHDzeTkIIbPLqZhBTY+3DvZhJScIShm0lIwS4u3ExCCjZw7GYSUtDBvptJSMECum4mIQVTWHEzCSkYwZKbSeuCN1jm4PdM6wL7JljG4PdM6wI7hxT7EPn91gV2DilP8PtFBQPYmZOyt1g5hd9fh0tV/QKR3w1XsSCfpAAAAABJRU5ErkJggg==">
+                            <span>Pants</span>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFpSURBVEhL7dXLKwVhGMfxYedSlLJRLims3MpGUZSVBYXI1qWsFKUUYSVZSGRj5T+wYauIpVIWSrGxcC2s2OD7m2b0zPR2GnNslF996vTMM/PMeXtnxkuQXLRgBPOYwyhq8CtZwQ1WMYNZbOAZQ0idajRiCQ8oQJgyvKMPvahF4rThFJ/YQ2fw+wD5qMIZPlAKDdfxY9QhY9rxBp0gryiC7nYR9SiHBp+jAWGv3KMSzhTiFvYEaYWWoQmPuIAu0o9JxPuP4MwU4s2ygGY8mdol9E/2Tc3qQiQ5uIKrWctjl83W47XQLiLR2rsa09LwEnxnG67GbEzATx5e4GrKxgn8DMLVkC09J3pYvZ2gYA9oP9taEneO2jS8a1MQ7QDtZVtLYg16Z9mav5tsQXqQZsAy9EK0Nf+hswXpRtoBYmv/AyL+/oB1OAcMYzwwhmKkGbAFfTrDa0kHnDmE6yKZbCJx9PUa+KEKxOJ5X1nAjZJMEyIDAAAAAElFTkSuQmCC">
+                            <span>Shirts</span>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAELSURBVEhL7dO/asJQFMfxDB06OHdpBZGCfQIfwCIdOjv5CI4d7CSUgu4dnIu4lEKnLl36CCIODv2zuRQHBQWpiPV7QiIxPSQ3txYc/MEHkpN770kuuU5McqjgCR8YY4Q+7lHGERIliyYG+PF8Qep+ClhAni3RQRUpROYSU/gLBw3xiGfMvFrYJ06h5gSyBdrEJORrDvAr8nbaBBtX2MgFtIG2JjiGm0O8QRv4Fw9wU4M2YBuKcN4DBd9cqcXR5rThHpSWVxDyG/YC96buIIdQrr9xA9n+dc7xigxsGlxDTvYLzhAZ2wbG2TeIzU42uIVxbBo0YJx9g9j8e4MutEWi1GGcPEoJpRGK46wA7JNinwhaq/8AAAAASUVORK5CYII=">
+                            <span>T-Shirts</span>
+                        </li>
+                        <li>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFUSURBVEhL1dS/K0ZRHMfxQ0aL8gyKGBQ9GYwUMRikDDwlKYuJRcrCJiWTEuUP8COTRbHIoJTNapKBSVIGlAHv78m9fX07z32c3JRvvZbPPbfv+XHPdX9VNajLWRXSWsNHziaR1hZCg35jBmnN4iRnw0irBwNGBxpNFlKLLpOJTviSA36DXeImZGU2t2Ry5yYTl/DVDvtQzGPdZCFymHsmE8+ohhv9CrR3tOFKZeXsYtxkiRa4ORUkjtBrsnJe0YAblSX64ZZVIO7QDNlDnWfZRjdeVCZG4FZVcIFWhPa0kkXI16RXMgG3gEOMoYgz6Bdj7KAJcslO4VdQjxL2EfpcYz1B/gyDkDvybYsqiZ2A36KYBvILuDdZlugGKzg2WZboBnJoSybLEt1ALtSQybJENbiFVAGh5yFRDQ6Q1DVCYyzfYBqPPzCFpDYQGqM9oA//upz7BHqjiKF7hvg0AAAAAElFTkSuQmCC">
+                            <span>Shorts</span>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="content" class="right">
+                @RenderBody()
+            </section>
+        </div>
+    </section>
+</body>
+</html>

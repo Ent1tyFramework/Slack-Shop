@@ -1,9 +1,10 @@
-﻿using Slack_Shop.Data.Enums;
+﻿using Slack_Shop.Domain.Enums;
+using Slack_Shop.Domain.Interfaces;
 using System;
 
-namespace Slack_Shop.Data
+namespace Slack_Shop.Domain.Entities
 {
-    internal class Product
+    public class Product : IEntity
     {
         public int Id { get; set; }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Slack_Shop.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Slack_Shop.Data.Interfaces
 {
     public interface IRepositoryManager
     {
-        IGenericRepository<TEntity> GenericRepository<TEntity>()
-            where TEntity : class, IGenericRepository<TEntity>;
+        IGenericRepository<TEntity> GetGenRepository<TEntity>()
+            where TEntity : class, IEntity;
     }
 }

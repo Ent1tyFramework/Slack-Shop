@@ -11,11 +11,13 @@ namespace Slack_Shop
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.MapMvcAttributeRoutes();
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "/home",
+                name: "Main",
+                url: "home",
                 defaults: new { controller = "Home", action = "Main", id = UrlParameter.Optional }
             );
 

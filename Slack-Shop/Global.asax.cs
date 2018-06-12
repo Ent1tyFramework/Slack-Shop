@@ -1,4 +1,9 @@
-﻿using System;
+﻿using Ninject;
+using Ninject.Modules;
+using Ninject.Web.Mvc;
+using Slack_Shop.Infrastructure;
+using Slack_Shop.Services.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +18,15 @@ namespace Slack_Shop
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            //dependency injection
+            var webModule = new WebModule();
+            var serviceModule = new ServiceModule();
+
+            var kernel = new StandardKernel(webModule, serviceModule);
+            kernel.Unbind<ModelValidatorProvider>();
+
+            DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
         }
     }
 }
